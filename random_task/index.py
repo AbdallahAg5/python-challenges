@@ -65,3 +65,9 @@ def function(arg1):
 
 function('arg1')
 
+
+
+# str methodes
+string = "hello there"[::-1]
+print(string)
+
