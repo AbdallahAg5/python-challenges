@@ -6,4 +6,4 @@ def remove_even_indexes(string):
           newString = string.replace(string[i],'')
     print(newString)
 
-remove_even_indexes('hello there')        
+remove_even_indexes('hello theree')        
