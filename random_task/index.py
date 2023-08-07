@@ -38,36 +38,76 @@ tuple1["name"] = 'Ziko'
 tuple1['city'] = "Rabat"
 tuple1.pop("city")
 tuple1.clear()
-print(tuple1)
+# print(tuple1)
 
 
 # if statment
-if 5 > 10:
-    print('hi')
-elif 5 < 10:
-    print('hello')    
-else:
-    print('heyy')    
+# if 5 > 10:
+#     print('hi')
+# elif 5 < 10:
+#     print('hello')    
+# else:
+#     print('heyy')    
 
 
-print('test1') if 5 == 5  else print('nothing')    
+# print('test1') if 5 == 5  else print('nothing')    
 
 
 # loop 
-num = 6
-for i in range(num):
-    print(i)
+# num = 6
+# for i in range(num):
+#    print(i)
 
 
 def function(arg1):
     print(arg1)
 
 
-function('arg1')
-
 
 
 # str methodes
-string = "hello there"[::-1]
-print(string)
+# string = "hello there"[::-1]
+# print(string)
+
+
+#set
+
+s = set()
+
+# Add elements to set
+s.add(3)
+s.add(1)
+s.add(5)
+s.add(3)
+# print(s)
+
+# Remove elemnt from set
+s.remove(5)
+# print(s)
+
+movies = [
+    {"title": "Green Book", "year": 2018},
+    {"title": "The Shape of Water", "year": 2017},
+    {"title": "Moonlight", "year": 2016},
+    {"title": "Spotlight", "year": 2015},
+    {"title": "Birdman", "year": 2014},
+    {"title": "12 Years a Slave", "year": 2013}
+]
+
+movies.sort(key=lambda movie: movie["title"])
+
+# for movie in movies:
+#     print("{title} was released in {year}".format(**movie))
+
+
+test = [
+      {"name":'abdallah',"age":18},
+      {"name":'abdallah',"age":18},
+      {"name":'abdallah',"age":18},
+      {"name":'abdallah',"age":18},
+]    
+
+for i in test:
+  #  print(test[i]["name"] + " " + str(test[i]["age"]))
+  print("{name} , {age}".format(**i) )
 
