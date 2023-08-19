@@ -10,3 +10,6 @@ movies = [
 
 for movie in movies:
     print("the title of the movie is {title} was released in {year}".format(**movie))
+
+
+
